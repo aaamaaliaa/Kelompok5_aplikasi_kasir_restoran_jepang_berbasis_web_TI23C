@@ -1,0 +1,32 @@
+{
+"roles": {
+"admin": {
+"label": "Admin",
+"dashboard": "admin/index.php",
+"permissions": ["read", "create", "update", "delete"]
+},
+    "kasir": {
+      "label": "Kasir",
+      "dashboard": "kasir/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    }
+},
+"modules": {
+    "menu": {
+      "label": "Menu",
+      "allowed_roles": ["admin", "kasir"]
+    },
+    "meja": {
+      "label": "Meja",
+      "allowed_roles": ["admin", "kasir"]
+    },
+    "transaksi": {
+      "label": "Transaksi",
+      "allowed_roles": ["admin", "kasir"]
+    },
+    "laporam": {
+      "label": "Laporan",
+      "allowed_roles": ["admin"]
+    }
+  }
+}
